@@ -1,37 +1,108 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-    background-image: url(IMAGES/0c813bcc-7535-4231-b2ef-fc890ee8cfaf.jpeg);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        180deg,
+        rgba(107,46,227,1) 0%,
+        rgba(69,24,229,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    background-image: url(images/bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    padding: 50px;
+    width: 420px;
+    height: 700px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 
+.form-login {
+    padding-top: 120px;
+}
 
+form img { 
+    width: 70px;
+    margin-bottom: 25px;
+}
 
-    
-    }
-    
-    
-    
-    h1{
-        text-align: center;
-        color: rgb(149, 0, 255);font-family: Arial;
-        font-size: 40px;
-      }
-      .img-center{
-        text-align: center;
-        justify-content: center;
-      }
-    ul{
-        text-align: left;
-        color: rgb(233, 42, 9);font-family: 'Times New Roman';
-        font-size: 30px;
-    }
-    
-    .a-link{
-      text-align: right;
+.input-container {
+    position: relative;
+}
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background: linear-gradient(
+        90deg,
+        rgba(247,94,49,1) 0%,
+        rgba(241,169,17,1) 100%);
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 7px;
+    right: 8px;
+}
+
+.input-container > input {
+    padding: 20px 50px 20px 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    font-size: 17px;
+    outline: none;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+form a {
+    display: block;
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    margin-bottom: 35px;
+}
+
+.btn {
+    background: linear-gradient(
+        90deg,
+        rgba(247,94,49,1) 0%,
+        rgba(241,169,17,1) 100%);
+    padding: 14px 75px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+@media(max-widht:991px) {
+    body {
+        padding: 30px;
     }
 
-    a {
-        text-align: center;
+    form {
+        width: 100%;
     }
+}
+
